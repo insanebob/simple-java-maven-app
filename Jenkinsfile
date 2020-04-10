@@ -5,8 +5,9 @@ pipeline {
     stages {
         stage('Build') { 
             steps {   
-                sh 'echo "Hello!!"'
-                sh 'mvn -B -DskipTests clean package' 
+                sh 'echo "Hello!!!"
+                sh 'mvn -B -DskipTests clean package'
+                sh 'Image Build finished!!'
             }
         }
     }

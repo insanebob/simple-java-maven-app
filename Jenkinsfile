@@ -7,7 +7,7 @@ pipeline {
             steps {   
                 sh 'echo "Hello!!!"'
                 sh 'mvn -B -DskipTests clean package'
-                sh 'Image Build finished!!'
+                sh 'echo "Image Build finished!!"'
             }
         }
     }
